@@ -1,0 +1,53 @@
+@media (max-width: 960px) {
+    .showcase {
+        height: 70vh;
+
+        &-content {
+            margin-top: 2rem;
+
+            h1 {
+                font-size: 3.7rem;
+                line-height: 1;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+
+    .hide-sm {
+        display: none;
+    }
+
+    .showcase-top img {
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+    }
+
+    .btn-xl {
+        font-size: 1.5rem;
+        padding: 1.4rem 2rem;
+    }
+
+    .text-xl {
+        font-size: 1.5rem;
+    }
+
+    .text-lg {
+        font-size: 1.3rem;
+    }
+
+    .text-md {
+        font-size: 1rem;
+    }
+
+    .footer {
+
+        .footer-cols {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

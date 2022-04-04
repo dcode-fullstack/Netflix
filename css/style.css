@@ -23,7 +23,7 @@ img {
 }
 
 .container {
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
@@ -98,7 +98,8 @@ img {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   background: #000;
   color: #999;
 }
@@ -137,6 +138,7 @@ body {
 .showcase-content {
   position: relative;
   z-index: 2;
+  width: 65%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,7 +168,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-weight: 400;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   line-height: 1.25;
   margin: 0 0 2rem;
 }
@@ -300,4 +302,103 @@ body {
 
 #tab-3-content .table tbody tr:nth-child(odd) {
   background: #222;
+}
+
+.footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: 0.9rem;
+}
+
+.footer a {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
+
+@media (max-width: 960px) {
+  .showcase {
+    height: 70vh;
+  }
+  .showcase-content {
+    margin-top: 2rem;
+  }
+  .showcase-content h1 {
+    font-size: 3.7rem;
+    line-height: 1;
+  }
+  .showcase-content p {
+    font-size: 1.5rem;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .showcase-top img {
+    top: 30%;
+    left: 5%;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .btn-xl {
+    font-size: 1.5rem;
+    padding: 1.4rem 2rem;
+  }
+  .text-xl {
+    font-size: 1.5rem;
+  }
+  .text-lg {
+    font-size: 1.3rem;
+  }
+  .text-md {
+    font-size: 1rem;
+  }
+  .footer .footer-cols {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .showcase-content {
+    margin-top: 1.5rem;
+  }
+  .showcase-content h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .showcase-content p {
+    font-size: 1rem;
+  }
+  .showcase::after {
+    -webkit-box-shadow: inset 80px 80px 250px #000000, inset -120px -100px 250px #000000;
+            box-shadow: inset 80px 80px 250px #000000, inset -120px -100px 250px #000000;
+  }
+  #tab-1-content .tab-1-content-inner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #tab-2-content .tab-2-content-top {
+    display: block;
+    text-align: center;
+  }
+  #tab-2-content .tab-2-content-bottom {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
