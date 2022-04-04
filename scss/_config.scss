@@ -1,0 +1,38 @@
+$primary-color: #e50914;
+$background: #000;
+$color: #999;
+$white: #fff;
+$dark-color: #141414;
+$tab-border: #3d3d3d;
+
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $white;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
