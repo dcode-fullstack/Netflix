@@ -90,6 +90,10 @@ img {
   text-transform: uppercase;
 }
 
+.btn-icon {
+  margin-left: 1rem;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -232,6 +236,17 @@ body {
   padding: 3rem;
   background: #000;
   color: #fff;
+}
+
+/* Hide Content Initialy */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
 }
 
 #tab-1-content .tab-1-content-inner {
@@ -382,6 +397,9 @@ body {
     line-height: 1;
   }
   .showcase-content p {
+    font-size: 1rem;
+  }
+  .showcase-content .btn-xl {
     font-size: 1rem;
   }
   .showcase::after {
