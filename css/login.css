@@ -1,0 +1,6 @@
+.wrapper {
+  width: 100%;
+  height: 120vh;
+  position: relative;
+  background: url("../IMG/background.jpg") no-repeat center center;
+}

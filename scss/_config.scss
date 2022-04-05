@@ -5,6 +5,19 @@ $white: #fff;
 $dark-color: #141414;
 $tab-border: #3d3d3d;
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: $background;
+    color: $color;
+}
+
 
 ul {
     list-style: none;
